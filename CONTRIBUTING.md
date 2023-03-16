@@ -4,7 +4,7 @@ Both original and copied ASCII art is accepted here in this repository.  This is
 
 This repository is for all who know _Spongebob Squarepants_ and the impact that this show -- probably one of the greatest cartoon shows in television history -- has had on people around the world.  We want to fill this repo with the same joy and exuberance that makes Spongebob one of the most beloved cartoon characters ever.
 
-Therefore, all contributions on this repo are to follow the [Contributor Covenant Code of Conduct](spongebob-ascii-art/CODE_OF_CONDUCT.md), so we can maintain a repository where all are safe to contribute their art.
+Therefore, all contributions on this repo are to follow the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md), so we can maintain a repository where all are safe to contribute their art.
 
 ---
 
@@ -44,7 +44,7 @@ Therefore, all contributions on this repo are to follow the [Contributor Covenan
    - Just please use common courtesy and treat those who may be new to Git and GitHub with the utmost respect.
 
 5. IF YOU SEE SOMETHING, SAY SOMETHING.
-   - If you witness or experience a violation of the [Contribution Covenant Code of Conduct](spongebob-ascii-art/CODE_OF_CONDUCT.md), or of these Contributing Guidelines, please be sure to let me know via my email (astrobrunner@gmail.com), and I will do my best to take care of that.
+   - If you witness or experience a violation of the [Contribution Covenant Code of Conduct](CODE_OF_CONDUCT.md), or of these Contributing Guidelines, please be sure to let me know via my email (astrobrunner@gmail.com), and I will do my best to take care of that.
 
 ---
 
