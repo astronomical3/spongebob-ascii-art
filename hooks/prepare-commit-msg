@@ -1,0 +1,57 @@
+# An example hook script to prepare the commit log message.
+# Called by "git commit" with the name of the file that has the
+# commit message, followed by the description of the commit
+# message's source.  The hook's purpose is to edit the commit
+# message file.  If the hook fails with a non-zero status,
+# the commit is aborted.
+#
+# To enable this hook, rename this file to "prepare-commit-msg".
+
+# This hook includes three examples. The first one removes the
+# "# Please enter the commit message..." help message.
+#
+# The second includes the output of "git diff --name-status -r"
+# into the message, just before the "git status" output.  It is
+# commented because it doesn't cope with --amend or with squashed
+# commits.
+#
+# The third example adds a Signed-off-by line to the message, that can
+# still be edited.  This is rarely a good idea.
+
+
+
+# **************************************************************** #
+# New custom script:
+
+#!/usr/bin/python3
+
+import sys, os, re
+from subprocess import check_output
+
+# Collect the parameters
+commit_msg_filepath = sys.argv[1]
+if len(sys.argv) > 2:
+    commit_type = sys.argv[2]
+else:
+    commit_type = ''
+if len(sys.argv) > 3:
+    commit_hash = sys.argv[3]
+else:
+    commit_hash = ''
+
+print("prepare-commit-msg: File: {}\nType: {}\nHash: {}".format(commit_msg_filepath, commit_type, commit_hash))
+
+# Figure out which branch we're on
+branch = check_output(['git', 'symbolic-ref', '--short', 'HEAD']).strip()
+print("prepare-commit-msg: On branch {}".format(branch))
+
+# Populate the commit message with the issue #, if there is one
+if branch.startswith('issue-'):
+    print("prepare-commit-msg: Oh hey, it's an issue branch.")
+    result = re.match('issue-(.*)', branch)
+    issue_number = result.group(1)
+
+    with open(commit_msg_filepath, 'r+') as f:
+        content = f.read()
+        f.seek(0, 0)
+        f.write("ISSUE-%s %s" % (issue_number, content))
