@@ -20,6 +20,8 @@ Therefore, all contributions on this repo are to follow the [Contributor Covenan
 - Create an [issue](https://github.com/astronomical3/spongebob-ascii-art/issues)
 - Fork and clone this repo, add some art to your fork, then make a Pull Request from your repo to my `main` branch.
 - Contact me at my email (**astrobrunner@gmail.com**) to be a contributor to the repository.
+- In the Discussions tab, request to join the central repo in the [Join our group!](https://github.com/astronomical3/spongebob-ascii-art/discussions/categories/join-our-group) category.
+- Or, request an idea in the [Ideas](https://github.com/astronomical3/spongebob-ascii-art/discussions/categories/ideas) category in the Discussions tab.  We can create an issue on your behalf.
 
 ---
 
